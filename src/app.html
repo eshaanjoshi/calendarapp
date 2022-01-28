@@ -18,9 +18,9 @@ function myFunction() {
   else {
     let time = prompt("Please Enter event time:", "")
     if (time == null || time == ""){
-      text = "Hello " + person + "! How are you today?";
+      text = "User cancelled the prompt.";
     }
-    text = "User cancelled the prompt.";
+    text = "Event " + person + " scheduled at " + time +"!";
   }
   document.getElementById("demo").innerHTML = text;
 }
