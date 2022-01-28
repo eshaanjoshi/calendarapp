@@ -4,7 +4,7 @@
 
 <h2>JavaScript Prompt</h2>
 
-<button onclick="myFunction()">Try it</button>
+<button onclick="myFunction()">Schedule Event</button>
 
 <p id="demo"></p>
 
@@ -14,10 +14,13 @@ function myFunction() {
   let person = prompt("Please enter event name:", "");
   if (person == null || person == "") {
     text = "User cancelled the prompt.";
-    
-  } else {
-    text = "Hello " + person + "! How are you today?";
+  } 
+  else {
     let time = prompt("Please Enter event time:", "")
+    if (time == null || time == ""){
+      text = "Hello " + person + "! How are you today?";
+    }
+    text = "User cancelled the prompt.";
   }
   document.getElementById("demo").innerHTML = text;
 }
