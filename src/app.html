@@ -4,6 +4,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script> 
 $(document).ready(function(){
+  var inputvalue = "field 1";
+      $('#id1').val(inputvalue);
   $("#flip").click(function(){
     $("#panel").slideDown("slow");
   });
@@ -24,9 +26,9 @@ $(document).ready(function(){
 </style>
 </head>
 <body>
- 
-<div id="flip">Click to slide down panel</div>
-<div id="panel">Hello world!</div>
+
+<div id="flip">Click to schedule event</div>
+<div id="panel"><input id="id1" value=""></div>
 
 </body>
 </html>
