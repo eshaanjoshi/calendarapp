@@ -4,8 +4,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script> 
 $(document).ready(function(){
-  var inputvalue = "field 1";
-      $('#id1').val(inputvalue);
+  var simpleText = "hello_world";
+            var finalSplitText = simpleText.split("_");
+            var splitText = finalSplitText[0];
+            $("#target").text(splitText);
   $("#flip").click(function(){
     $("#panel").slideDown("slow");
   });
@@ -28,7 +30,7 @@ $(document).ready(function(){
 <body>
 
 <div id="flip">Click to schedule event</div>
-<div id="panel"><input id="id1" value=""></div>
+<div id="target" href = "app.html"></div>
 
 </body>
 </html>
